@@ -1,6 +1,6 @@
 FROM i386/ubuntu:16.04
 COPY ./sources.list /etc/apt/sources.list
-COPY ../qemu /usr/local/bin/qemu/
+COPY ./qemu /usr/local/bin/qemu/
 WORKDIR /usr/local/bin/qemu/
 RUN apt-get update \
    && apt-get install -y build-essential gdb \
