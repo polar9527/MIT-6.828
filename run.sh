@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-docker run --rm -it --name xv6 -v /root/6.828/:/6.828 erudite/mit-ubuntu:1.0 /bin/bash
+v=$(pwd)/6.828/
+docker run --rm -it --name xv6 -v "${v}":/6.828 polar9527/ubuntu16.04-mit6.828-2018:1.0 /bin/bash
